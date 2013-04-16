@@ -31,8 +31,8 @@
 
        d = CalcDistanceBetween(lat1, lon1, lat2, lon2);
 
-       if (d < 5) {
-         return [[riakObject.key]];
+       if (d < 1) {
+         return [[riakObject]];
        }
        else {
          return [];
