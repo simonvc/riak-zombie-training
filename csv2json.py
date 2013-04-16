@@ -8,6 +8,6 @@ import json
 for line in sys.stdin.readlines():
   jsonline={}
   dictionary=dict(zip('dna,sex,name,street,city,state,postcode,phonenumber,dob,othernumber,occupation,bloodtype,weight,height,lat,longd'.split(','), line.replace('\'', '.').replace('"', '').split(',')))
-print json.dumps(dictionary)
+  print json.dumps(dictionary)
 
 
